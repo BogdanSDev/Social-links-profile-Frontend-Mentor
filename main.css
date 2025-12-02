@@ -1,0 +1,172 @@
+@font-face {
+    font-family: "Inter";
+    src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+/* Color vars */
+:root {
+--ACCENT: hsl(75, 94%, 57%);
+--PRIMARY-TEXT: hsl(0, 0%, 100%);
+--GREY-700: hsl(0, 0%, 20%);
+--GREY-800: hsl(0, 0%, 12%);
+--GREY-900: hsl(0, 0%, 8%);
+}
+
+/* Normalize styles */
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    background-color: var(--GREY-900);
+    color: var(--PRIMARY-TEXT);
+    font-family: "Inter", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+h1, p, a, ul, li {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-style: normal;
+    color: var(--PRIMARY-TEXT);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Container */
+.container {
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 100%;
+}
+
+.list-reset {
+    list-style: none;
+}
+
+/* Profile */
+.profile {
+    margin: 10% auto;
+    padding: 40px;
+    max-width: 380px;
+    background-color: var(--GREY-800);
+    border-radius: 10px;
+}
+
+.user__header {
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.user__avatar {
+    margin-bottom: 20px;
+    border-radius: 50%;
+    max-width: 96px;
+}
+
+.user__name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.user__residence {
+    margin-bottom: 20px;
+    display: inline-block;
+    color: var(--ACCENT);
+    font-weight: 600;
+}
+
+.user__desc::before, .user__desc::after {
+    content: "\0022";
+}
+
+.user__social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social__list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    font-weight: 600;
+    text-align: center;
+    row-gap: 20px;
+}
+
+.social__list > li {
+    display: block;
+    background-color: var(--GREY-700);
+    border-radius: 10px;
+}
+
+.social__button {
+    padding: 1em 0;
+    width: 100%;
+    display: block;
+    height: auto;
+    border-radius: 10px;
+}
+
+.social__button:hover, .social__button:active {
+    background-color: var(--ACCENT);
+    color: var(--GREY-900);
+}
+
+.social__button:focus {
+    outline: 2px solid var(--ACCENT);
+}
+
+/* Attribution */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* Media */
+@media screen and (max-width: 370px) {
+    .profile {
+        margin: 5%;
+        padding: 10px;
+    }
+
+    .user__avatar {
+        max-width: 28vw;
+    }
+
+    .user__name {
+        font-size: 6vw;
+    }
+
+    .user__residence, .user__desc {
+        font-size: 4vw;
+    }
+
+    .social__button {
+        font-size: 3.5vw;
+    }
+
+    .social__list {
+        row-gap: 4vw;
+    }
+}
