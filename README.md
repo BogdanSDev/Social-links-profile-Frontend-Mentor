@@ -29,8 +29,8 @@ Mobile 370px
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/BogdanSDev/Blog-preview-card-Frontend-Mentor/tree/main?tab=readme-ov-file)
-- Live Site URL: [GitHub Pages](https://bogdansdev.github.io/Blog-preview-card-Frontend-Mentor/)
+- Solution URL: [GitHub](https://github.com/BogdanSDev/Social-links-profile-Frontend-Mentor)
+- Live Site URL: [GitHub Pages](https://bogdansdev.github.io/Social-links-profile-Frontend-Mentor/)
 
 ## My process
 
